@@ -15,7 +15,7 @@ letter_space=[x0,x1,x2,x3,x4,x5,x6,x7]
 #Lowercase letter 'a'
 x0= bitarray('00000000')
 x1= bitarray('00011000')
-x2= bitarray('00000100')
+x2= bitarray('00100100')
 x3= bitarray('00000100')
 x4= bitarray('00011100')
 x5= bitarray('00100100')
@@ -42,89 +42,96 @@ x1= bitarray('00011000')
 x2= bitarray('00100100')
 x3= bitarray('00100000')
 x4= bitarray('00100000')
-x5= bitarray('00100000')
-x6= bitarray('00011100')
+x5= bitarray('00100100')
+x6= bitarray('00011000')
 x7= bitarray('00000000')
 letter_c=[x0,x1,x2,x3,x4,x5,x6,x7]
 
 
 
-# Letter D
+#Lowercase letter 'd'
 x0= bitarray('00000000')
-x1= bitarray('00111000')
-x2= bitarray('00100100')
-x3= bitarray('00100100')
+x1= bitarray('00000100')
+x2= bitarray('00000100')
+x3= bitarray('00011100')
 x4= bitarray('00100100')
 x5= bitarray('00100100')
-x6= bitarray('00111000')
+x6= bitarray('00011000')
 x7= bitarray('00000000')
-letter_D=[x0,x1,x2,x3,x4,x5,x6,x7]
+letter_d=[x0,x1,x2,x3,x4,x5,x6,x7]
+
+
+
 
 # Letter E
 x0= bitarray('00000000')
-x1= bitarray('00111100')
-x2= bitarray('00100000')
+x1= bitarray('00011000')
+x2= bitarray('00100100')
 x3= bitarray('00111100')
 x4= bitarray('00100000')
 x5= bitarray('00100000')
-x6= bitarray('00111100')
+x6= bitarray('00011000')
 x7= bitarray('00000000')
-letter_E=[x0,x1,x2,x3,x4,x5,x6,x7]
+letter_e=[x0,x1,x2,x3,x4,x5,x6,x7]
+
+
+
+
 
 # Letter F
 x0= bitarray('00000000')
-x1= bitarray('00111100')
-x2= bitarray('00100000')
-x3= bitarray('00111100')
-x4= bitarray('00100000')
-x5= bitarray('00100000')
-x6= bitarray('00100000')
+x1= bitarray('00001100')
+x2= bitarray('00010000')
+x3= bitarray('00111000')
+x4= bitarray('00010000')
+x5= bitarray('00010000')
+x6= bitarray('00010000')
 x7= bitarray('00000000')
-letter_F=[x0,x1,x2,x3,x4,x5,x6,x7]
+letter_f=[x0,x1,x2,x3,x4,x5,x6,x7]
 
 # Letter G
 x0= bitarray('00000000')
-x1= bitarray('00111100')
-x2= bitarray('00100000')
-x3= bitarray('00100000')
-x4= bitarray('00101100')
-x5= bitarray('00100100')
-x6= bitarray('00111100')
+x1= bitarray('00011100')
+x2= bitarray('00100100')
+x3= bitarray('00100100')
+x4= bitarray('00011100')
+x5= bitarray('00000100')
+x6= bitarray('00011000')
 x7= bitarray('00000000')
-letter_G=[x0,x1,x2,x3,x4,x5,x6,x7]
+letter_g=[x0,x1,x2,x3,x4,x5,x6,x7]
 
 # Letter H
 x0= bitarray('00000000')
-x1= bitarray('00100100')
-x2= bitarray('00100100')
-x3= bitarray('00111100')
-x4= bitarray('00100100')
+x1= bitarray('00100000')
+x2= bitarray('00100000')
+x3= bitarray('00100000')
+x4= bitarray('00111000')
 x5= bitarray('00100100')
 x6= bitarray('00100100')
 x7= bitarray('00000000')
-letter_H=[x0,x1,x2,x3,x4,x5,x6,x7]
+letter_h=[x0,x1,x2,x3,x4,x5,x6,x7]
 
 # Letter I
 x0= bitarray('00000000')
-x1= bitarray('00011100')
-x2= bitarray('00001000')
-x3= bitarray('00001000')
+x1= bitarray('00001000')
+x2= bitarray('00000000')
+x3= bitarray('00011000')
 x4= bitarray('00001000')
 x5= bitarray('00001000')
 x6= bitarray('00011100')
 x7= bitarray('00000000')
-letter_I=[x0,x1,x2,x3,x4,x5,x6,x7]
+letter_i=[x0,x1,x2,x3,x4,x5,x6,x7]
 
 # Letter J
 x0= bitarray('00000000')
-x1= bitarray('00011100')
-x2= bitarray('00001000')
-x3= bitarray('00001000')
-x4= bitarray('00001000')
-x5= bitarray('00001000')
+x1= bitarray('00001000')
+x2= bitarray('00000000')
+x3= bitarray('00011100')
+x4= bitarray('00000100')
+x5= bitarray('00000100')
 x6= bitarray('00011000')
 x7= bitarray('00000000')
-letter_J=[x0,x1,x2,x3,x4,x5,x6,x7]
+letter_j=[x0,x1,x2,x3,x4,x5,x6,x7]
 
 # Letter K
 x0= bitarray('00000000')
@@ -135,84 +142,84 @@ x4= bitarray('00110000')
 x5= bitarray('00101000')
 x6= bitarray('00100100')
 x7= bitarray('00000000')
-letter_K=[x0,x1,x2,x3,x4,x5,x6,x7]
+letter_k=[x0,x1,x2,x3,x4,x5,x6,x7]
 
 # Letter L
 x0= bitarray('00000000')
-x1= bitarray('00100000')
-x2= bitarray('00100000')
-x3= bitarray('00100000')
-x4= bitarray('00100000')
-x5= bitarray('00100000')
-x6= bitarray('00111100')
+x1= bitarray('00011000')
+x2= bitarray('00001000')
+x3= bitarray('00001000')
+x4= bitarray('00001000')
+x5= bitarray('00001000')
+x6= bitarray('00011100')
 x7= bitarray('00000000')
-letter_L=[x0,x1,x2,x3,x4,x5,x6,x7]
+letter_l=[x0,x1,x2,x3,x4,x5,x6,x7]
 
 # Letter M
 x0= bitarray('00000000')
-x1= bitarray('01111100')
-x2= bitarray('01010100')
+x1= bitarray('00000000')
+x2= bitarray('01101000')
 x3= bitarray('01010100')
 x4= bitarray('01010100')
 x5= bitarray('01010100')
 x6= bitarray('01010100')
 x7= bitarray('00000000')
-letter_M=[x0,x1,x2,x3,x4,x5,x6,x7]
+letter_m=[x0,x1,x2,x3,x4,x5,x6,x7]
 
 # Letter N
 x0= bitarray('00000000')
-x1= bitarray('00100100')
-x2= bitarray('00100100')
-x3= bitarray('00110100')
-x4= bitarray('00101100')
-x5= bitarray('00100100')
-x6= bitarray('00100100')
-x7= bitarray('00000000')
-letter_N=[x0,x1,x2,x3,x4,x5,x6,x7]
-
-# Letter O
-x0= bitarray('00000000')
-x1= bitarray('00111100')
-x2= bitarray('00100100')
+x1= bitarray('00000000')
+x2= bitarray('00111000')
 x3= bitarray('00100100')
 x4= bitarray('00100100')
 x5= bitarray('00100100')
-x6= bitarray('00111100')
+x6= bitarray('00100100')
 x7= bitarray('00000000')
-letter_O=[x0,x1,x2,x3,x4,x5,x6,x7]
+letter_n=[x0,x1,x2,x3,x4,x5,x6,x7]
+
+# Letter O
+x0= bitarray('00000000')
+x1= bitarray('00000000')
+x2= bitarray('00011000')
+x3= bitarray('00100100')
+x4= bitarray('00100100')
+x5= bitarray('00100100')
+x6= bitarray('00011000')
+x7= bitarray('00000000')
+letter_o=[x0,x1,x2,x3,x4,x5,x6,x7]
 
 # Letter P
 x0= bitarray('00000000')
-x1= bitarray('00111100')
+x1= bitarray('00000000')
+x2= bitarray('00111000')
+x3= bitarray('00100100')
+x4= bitarray('00111000')
+x5= bitarray('00100000')
+x6= bitarray('00100000')
+x7= bitarray('00000000')
+letter_p=[x0,x1,x2,x3,x4,x5,x6,x7]
+
+# Letter Q
+x0= bitarray('00000000')
+x1= bitarray('00011100')
 x2= bitarray('00100100')
-x3= bitarray('00111100')
+x3= bitarray('00100100')
+x4= bitarray('00011100')
+x5= bitarray('00000100')
+x6= bitarray('00000100')
+x7= bitarray('00000000')
+letter_q=[x0,x1,x2,x3,x4,x5,x6,x7]
+
+# Letter R
+x0= bitarray('00000000')
+x1= bitarray('00000000')
+x2= bitarray('00111000')
+x3= bitarray('00100100')
 x4= bitarray('00100000')
 x5= bitarray('00100000')
 x6= bitarray('00100000')
 x7= bitarray('00000000')
-letter_P=[x0,x1,x2,x3,x4,x5,x6,x7]
-
-# Letter Q
-x0= bitarray('00000000')
-x1= bitarray('00111100')
-x2= bitarray('00100100')
-x3= bitarray('00100100')
-x4= bitarray('00100100')
-x5= bitarray('00101100')
-x6= bitarray('00111100')
-x7= bitarray('00000000')
-letter_Q=[x0,x1,x2,x3,x4,x5,x6,x7]
-
-# Letter R
-x0= bitarray('00000000')
-x1= bitarray('00111100')
-x2= bitarray('00100100')
-x3= bitarray('00111100')
-x4= bitarray('00110000')
-x5= bitarray('00101000')
-x6= bitarray('00100100')
-x7= bitarray('00000000')
-letter_R=[x0,x1,x2,x3,x4,x5,x6,x7]
+letter_r=[x0,x1,x2,x3,x4,x5,x6,x7]
 
 # Letter S
 x0= bitarray('00000000')
@@ -632,14 +639,30 @@ mapping_lowercase = {}
 mapping_lowercase['a'] = letter_a
 mapping_lowercase['b'] = letter_b
 mapping_lowercase['c'] = letter_c
+mapping_lowercase['d'] = letter_d
+mapping_lowercase['e'] = letter_e
+mapping_lowercase['f'] = letter_f
+mapping_lowercase['g'] = letter_g
+mapping_lowercase['h'] = letter_h
+mapping_lowercase['i'] = letter_i
+mapping_lowercase['j'] = letter_j
+mapping_lowercase['k'] = letter_k
+mapping_lowercase['l'] = letter_l
+mapping_lowercase['m'] = letter_m
+mapping_lowercase['n'] = letter_n
+mapping_lowercase['o'] = letter_o
+mapping_lowercase['p'] = letter_p
+mapping_lowercase['q'] = letter_q
+mapping_lowercase['r'] = letter_r
+
 
 mapping_lowercase['_'] = symbol_under
 mapping_lowercase[' '] = letter_space
 
 
-narrows = [symbol_plus,letter_I,letter_J,letter_T,symbol_em, symbol_ob, symbol_cb,symbol_plus]
+narrows = [symbol_plus,letter_i,letter_j, letter_l,letter_T,symbol_em, symbol_ob, symbol_cb,symbol_plus]
 super_narrow = [letter_space,special_degrees]
-wides = [letter_M,letter_W,symbol_ast,symbol_hash,special_smilie, special_hart, letter_a, letter_b, letter_c]
+wides = [letter_m,letter_W,symbol_ast,symbol_hash,special_smilie, special_hart, letter_a, letter_b, letter_c]
 super_wides = [special_smilie, special_hart]
 specials = ['~heart','~smile','~degrs']
 

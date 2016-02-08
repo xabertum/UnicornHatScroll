@@ -7,6 +7,7 @@ from bitarray import bitarray
 import time
 #import letter definitions and mappings
 from UHScroll_defs import *
+from UHScroll_defs_lowercase import *
 
 '''It assumes the Pi/hat will orientated with the long side of the Pi without any connectors on
 the bottom, i.e. the Hat will be rotated 90 degrees clockwise (assuming the "UNICORN HAT" label and 
@@ -95,7 +96,18 @@ def map_character(chr):
 	else:
 		return mapping['_']
 
-def load_message(message):
+
+
+def map_character_lowercase(chr):
+	if chr in mapping_lowercase:
+		return mapping_lowercase[chr]
+	else:
+                return mapping_lowercase['_']
+
+
+
+
+def load_message_uppercase(message):
 	unicorn_message = []
 	message = '  ' + message # pad the message with a couple of spaces so it starts on the right
 	skip = 0
@@ -113,13 +125,40 @@ def load_message(message):
 		
 	return(unicorn_message)
 
-def unicorn_scroll(text,colour,brightness,speed):
+
+def load_message_lowercase(message):
+	unicorn_message = []
+	message = '  ' + message # pad the message with a couple of spaces so it starts on the right
+	skip = 0
+	for ch in (range(len(message))):
+		#print message[ch]
+		if skip != 0:
+			skip-=1
+		else:
+			if message[ch] == '~':
+				spec = message[ch+1] + message[ch+2] + message[ch+3] + message[ch+4] + message[ch+5]
+				unicorn_message.append(trim_letter(map_character_lowercase(spec)))
+				skip = 5
+			else:
+				unicorn_message.append(trim_letter(map_character_lowercase(message[ch])))
+		
+	return(unicorn_message)
+
+
+
+def unicorn_scroll_uppercase(text,colour,brightness,speed):
 	#try:
-	scroll_word(make_word(load_message(text)),colour,brightness,speed)
+	scroll_word(make_word(load_message_uppercase(text)),colour,brightness,speed)
 	#except: 
 		#print 'Enter unicorn_scroll(message,colour,brightness,speed) where '
 		#print 'message is a string, colour is either red,white,blue,green,pink, yellow, orange or cyan'
 		#print 'brightness is a integer 0-255 and speed is the time between chars'
 	
-
+def unicorn_scroll_lowercase(text,colour,brightness,speed):
+	#try:
+	scroll_word(make_word(load_message_lowercase(text)),colour,brightness,speed)
+	#except: 
+		#print 'Enter unicorn_scroll(message,colour,brightness,speed) where '
+		#print 'message is a string, colour is either red,white,blue,green,pink, yellow, orange or cyan'
+		#print 'brightness is a integer 0-255 and speed is the time between chars'
 

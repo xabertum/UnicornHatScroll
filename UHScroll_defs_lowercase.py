@@ -1,17 +1,4 @@
-'''This file contains all the letter designs as an 8x8 bitarray. 
-You can add your won by just folowing the same format. Don't forget to specify the character 
-to which it relates to in the mapping dictionary. 
-
-Currently only uppercase letter are defined. Any message enetered with lowercase chars will
-automatically be rendered in uppercase
-
-If you try to create a scrolling message using another undefined character it will be displayed as an
-underscore (_)
-
-'''
-
 from bitarray import bitarray
-
 
 # Letter space
 x0= bitarray('00000000')
@@ -24,38 +11,43 @@ x6= bitarray('00000000')
 x7= bitarray('00000000')
 letter_space=[x0,x1,x2,x3,x4,x5,x6,x7]
 
-# Letter A
-x0= bitarray('00000000')
-x1= bitarray('00111100')
-x2= bitarray('00100100')
-x3= bitarray('00111100')
-x4= bitarray('00100100')
-x5= bitarray('00100100')
-x6= bitarray('00100100')
-x7= bitarray('00000000')
-letter_A=[x0,x1,x2,x3,x4,x5,x6,x7]
 
-# Letter B
+#Lowercase letter 'a'
 x0= bitarray('00000000')
-x1= bitarray('00111000')
-x2= bitarray('00100100')
+x1= bitarray('00011000')
+x2= bitarray('00000100')
+x3= bitarray('00000100')
+x4= bitarray('00011100')
+x5= bitarray('00100100')
+x6= bitarray('00011000')
+x7= bitarray('00000000')
+letter_a=[x0,x1,x2,x3,x4,x5,x6,x7]
+
+
+#Lowercase letter 'b'
+x0= bitarray('00000000')
+x1= bitarray('00100000')
+x2= bitarray('00100000')
 x3= bitarray('00111000')
 x4= bitarray('00100100')
 x5= bitarray('00100100')
 x6= bitarray('00111000')
 x7= bitarray('00000000')
-letter_B=[x0,x1,x2,x3,x4,x5,x6,x7]
+letter_b=[x0,x1,x2,x3,x4,x5,x6,x7]
 
-# Letter C
+
+#Lowercase letter 'c'
 x0= bitarray('00000000')
-x1= bitarray('00111100')
-x2= bitarray('00100000')
+x1= bitarray('00011000')
+x2= bitarray('00100100')
 x3= bitarray('00100000')
 x4= bitarray('00100000')
 x5= bitarray('00100000')
-x6= bitarray('00111100')
+x6= bitarray('00011100')
 x7= bitarray('00000000')
-letter_C=[x0,x1,x2,x3,x4,x5,x6,x7]
+letter_c=[x0,x1,x2,x3,x4,x5,x6,x7]
+
+
 
 # Letter D
 x0= bitarray('00000000')
@@ -634,71 +626,20 @@ special_degrees=[x0,x1,x2,x3,x4,x5,x6,x7]
 into the relevant bitarray'''
 
 
-mapping = {}
-mapping['A'] = letter_A
-mapping['B'] = letter_B
-mapping['C'] = letter_C
-mapping['D'] = letter_D
-mapping['E'] = letter_E
-mapping['F'] = letter_F
-mapping['G'] = letter_G
-mapping['H'] = letter_H
-mapping['I'] = letter_I
-mapping['J'] = letter_J
-mapping['K'] = letter_K
-mapping['L'] = letter_L
-mapping['M'] = letter_M
-mapping['N'] = letter_N
-mapping['O'] = letter_O
-mapping['P'] = letter_P
-mapping['Q'] = letter_Q
-mapping['R'] = letter_R
-mapping['S'] = letter_S
-mapping['T'] = letter_T
-mapping['U'] = letter_U
-mapping['V'] = letter_V
-mapping['W'] = letter_W
-mapping['X'] = letter_X
-mapping['Y'] = letter_Y
-mapping['Z'] = letter_Z
-mapping['0'] = number_0
-mapping['1'] = number_1
-mapping['2'] = number_2
-mapping['3'] = number_3
-mapping['4'] = number_4
-mapping['5'] = number_5
-mapping['6'] = number_6
-mapping['7'] = number_7
-mapping['8'] = number_8
-mapping['9'] = number_9
-mapping['@'] = symbol_at
-mapping['.'] = symbol_dot
-mapping['-'] = symbol_hyph
-mapping['?'] = symbol_qm
-mapping['!'] = symbol_em
-mapping[' '] = letter_space
-mapping['_'] = symbol_under
-mapping['#'] = symbol_hash
-mapping['+'] = symbol_plus
-mapping['='] = symbol_equals
-mapping['$'] = symbol_dollar
-mapping['"'] = symbol_dbq
-mapping[')'] = symbol_cb
-mapping['('] = symbol_ob
-mapping['*'] = symbol_ast
-mapping['>'] = symbol_gt
-mapping['<'] = symbol_lt
-mapping['heart'] = special_hart
-mapping['smile'] = special_smilie
-mapping['degrs'] = special_degrees
+mapping_lowercase = {}
 
 
-'''Characters are normally 4x6 high although some (e.g m, w) are wider and others are narrower 
-(e.g. !, I, J). In order for these to be proiperly spaced in a word (i.e seperated by 2 blank columns,
-any additional wide or narrow letters must be added to the appropriate list)'''
+mapping_lowercase['a'] = letter_a
+mapping_lowercase['b'] = letter_b
+mapping_lowercase['c'] = letter_c
+
+mapping_lowercase['_'] = symbol_under
+mapping_lowercase[' '] = letter_space
+
 
 narrows = [symbol_plus,letter_I,letter_J,letter_T,symbol_em, symbol_ob, symbol_cb,symbol_plus]
 super_narrow = [letter_space,special_degrees]
-wides = [letter_M,letter_W,symbol_ast,symbol_hash,special_smilie, special_hart]
+wides = [letter_M,letter_W,symbol_ast,symbol_hash,special_smilie, special_hart, letter_a, letter_b, letter_c]
 super_wides = [special_smilie, special_hart]
 specials = ['~heart','~smile','~degrs']
+

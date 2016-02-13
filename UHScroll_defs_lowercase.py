@@ -100,7 +100,7 @@ x6= bitarray('00011000')
 x7= bitarray('00000000')
 letter_g=[x0,x1,x2,x3,x4,x5,x6,x7]
 
-# Lowercase letter 'g'
+# Lowercase letter 'h'
 x0= bitarray('00000000')
 x1= bitarray('00100000')
 x2= bitarray('00100000')
@@ -111,7 +111,7 @@ x6= bitarray('00100100')
 x7= bitarray('00000000')
 letter_h=[x0,x1,x2,x3,x4,x5,x6,x7]
 
-# Lowercase letter 'h'
+# Lowercase letter 'i'
 x0= bitarray('00000000')
 x1= bitarray('00001000')
 x2= bitarray('00000000')
